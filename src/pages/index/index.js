@@ -1,7 +1,5 @@
 // index.js
 // 获取应用实例
-import F2 from '@antv/f2';
-import _ from 'lodash';
 const app = getApp()
 
 Page({
@@ -20,7 +18,6 @@ Page({
     })
   },
   onLoad() {
-    console.log(F2);
     if (wx.getUserProfile) {
       this.setData({
         canIUseGetUserProfile: true

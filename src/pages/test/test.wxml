@@ -1,1 +1,6 @@
-<view class="page-container">This is a test page</view>
+<view class="page-container">
+  <view class="title">This is an interactive example of F2 chart</view>
+  <view class="chart-container">
+    <jw-f2 onRender="{{renderChart}}" />
+  </view>
+</view>

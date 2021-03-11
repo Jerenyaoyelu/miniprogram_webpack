@@ -1,5 +1,5 @@
 {
   "usingComponents": {
-    
+    "jw-f2": "/components/jw-f2/index"
   }
 }
