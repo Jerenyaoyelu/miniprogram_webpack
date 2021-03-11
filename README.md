@@ -8,9 +8,11 @@
 ```javascript
 {
   ...
-  "miniprogramRoot":"/dist",
+  "miniprogramRoot":"dist",
   ...
 }
+
+注意：若写成'/dist', 模拟器上可以正常运行，但真机调试时会显示'app.json'找不到
 ```
 - 开始webpack watch监听
   - 监听文件修改以实现自动重新构建，无需每次运行`npx webpack`
