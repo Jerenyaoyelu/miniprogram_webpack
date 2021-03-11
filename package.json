@@ -15,7 +15,9 @@
     "@babel/preset-env": "^7.13.10",
     "@babel/runtime": "^7.13.10",
     "babel-loader": "^8.2.2",
+    "chalk": "^4.1.0",
     "lodash": "^4.17.21",
+    "replace-ext": "^2.0.0",
     "webpack": "^5.24.4",
     "webpack-cli": "^4.5.0"
   },

@@ -1,13 +1,12 @@
 const path = require('path');
 const CopyPlugin = require('copy-webpack-plugin');
+const EntryPlugin = require('./plugins/EntryExtractPlugin');
 const ABSOLUTE_PATH = process.cwd();
 
 module.exports = {
   context: path.resolve(ABSOLUTE_PATH, 'src'),
   entry: {
-    app: './app.js',
-    'pages/index/index': './pages/index/index.js',
-    "pages/logs/logs": "./pages/logs/logs.js"
+    app: './app.js'
   },
   output: {
     filename: '[name].js',
@@ -46,7 +45,8 @@ module.exports = {
           }
         ]
       }
-    )
+    ),
+    new EntryPlugin()
   ],
   watch: true,
   watchOptions: {
