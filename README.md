@@ -1,6 +1,10 @@
-# 基于webpack 5微信小程序工程化的@antv/f2本地封装使用案例
+# webpack 5微信小程序工程化
+> @antv/f2自定义封装使用案例
 
 ## 启动项目
+`npm run dev`
+
+## 打包项目
 `npm run build`
 
 ## 工程化关键步骤：
