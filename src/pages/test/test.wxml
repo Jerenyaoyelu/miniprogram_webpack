@@ -1,6 +1,4 @@
 <view class="page-container">
   <view class="title">This is an interactive example of F2 chart</view>
-  <view class="chart-container">
-    <jw-f2 onRender="{{renderChart}}" />
-  </view>
+  <multi-line data="{{chartData}}" />
 </view>
