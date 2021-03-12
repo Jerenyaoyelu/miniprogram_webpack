@@ -1,4 +1,0 @@
-<view class="page-container">
-  <view class="title">This is an interactive example of F2 chart</view>
-  <multi-line data="{{chartData}}" />
-</view>
