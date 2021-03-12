@@ -1,19 +1,19 @@
 Component({
   properties: {
-    data: {
+    chartData: {
       type: Object,
       value: {}
     }
   },
-  lifetimes: {
-
+  data: {
+    chartId: '__jw-multi-line'
   },
   methods: {
     renderChart(e) {
       const {F2, config, that} = e.detail;
       if(!F2 || !config || !that) return;
       const chart = new F2.Chart(config);
-      chart.source(this.properties.data, {
+      chart.source(this.properties.chartData, {
         date: {
           range: [0, 1],
           type: 'timeCat',

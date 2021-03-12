@@ -1,0 +1,10 @@
+<view class="page-container">
+  <view class="chart-section">
+    <view class="title">Line Chart</view>
+    <multi-line chartData="{{lineData}}" id="{{chartId}}"/>
+  </view>
+  <view class="chart-section">
+    <view class="title">Radar Chart</view>
+    <basic-radar chartData="{{radarData}}" id="{{chartId}}"/>
+  </view>
+</view>
