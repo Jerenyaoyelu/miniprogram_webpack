@@ -13,12 +13,16 @@ Component({
     onRender: {
       type: Function,
       value: () => {}
+    },
+    id: {
+      type: String,
+      value: '__jw-f2-canvas'
     }
   },
   lifetimes: {
     ready() {
       const query = wx.createSelectorQuery().in(this);
-      query.select('.__jw-f2-canvas')
+      query.select(`#${this.properties.id}`)
       .fields({
         node: true,
         size: true

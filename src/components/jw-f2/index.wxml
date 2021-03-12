@@ -1,6 +1,7 @@
 <!-- canvas 2d 不支持真机模拟 -->
 <canvas
   type="2d"
+  id="{{id}}"
   class="__jw-f2-canvas"
   bindtouchstart="touchStart"
   bindtouchmove="touchMove"
