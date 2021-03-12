@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "multi-line": "/components/MultiLineChart/index",
+    "basic-radar": "/components/BasicRadar/index"
+  }
+}

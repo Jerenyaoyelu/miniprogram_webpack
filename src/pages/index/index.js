@@ -47,7 +47,7 @@ Page({
   },
   gotoPage() {
     wx.navigateTo({
-      url: '../test/test',
+      url: '../exampleCharts/index',
     })
   }
 })
