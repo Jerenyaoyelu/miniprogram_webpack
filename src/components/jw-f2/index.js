@@ -32,11 +32,10 @@ Component({
         node.height = height * pixelRatio;
 
         const config = { context, width, height, pixelRatio };
-        const chart = this.properties.onRender(F2, config);
-        if (chart) {
-          this.chart = chart;
-          this.canvasEl = chart.get('el');
-        }
+        const that = this;
+        this.triggerEvent('onRender', {
+          F2, config, that
+        })
       });
     },
   },
