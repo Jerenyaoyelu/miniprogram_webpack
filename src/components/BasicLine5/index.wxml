@@ -1,0 +1,3 @@
+<view class="chart-container">
+  <jw-f2 bindonRender="initChart" id="{{chartId}}"/>
+</view>
