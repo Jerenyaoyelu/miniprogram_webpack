@@ -1,4 +1,5 @@
-import F2 from '@antv/f2';
+import F2 from '@antv/f2/lib/index-all';
+import ScrollBar from '@antv/f2/lib/plugin/scroll-bar';
 
 function wrapEvent(e) {
   if (!e) return;
@@ -21,6 +22,10 @@ Component({
   },
   lifetimes: {
     ready() {
+      // 注册插件
+      F2.Chart.plugins.register(ScrollBar)
+
+      // 适配微信小程序context
       const query = wx.createSelectorQuery().in(this);
       query.select(`#${this.properties.id}`)
       .fields({
